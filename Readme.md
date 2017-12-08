@@ -1,14 +1,8 @@
-<br>
-
 ![Banner](Resources/banner.jpg)
-
-<br>
 
 This project aims to give you a reference and eliminate the hours you spend on searching for syntax of code to implement in your projects. Whether you're learning iOS application developement for knowledge or you are working on your dream project, you can use this project as your starting guide for using various basic iOS components e.g. UITableView, UICollectionView, etc. 
 
 See the demo app to play with all the components.
-
-<br>
 
 ## Project Details
 
