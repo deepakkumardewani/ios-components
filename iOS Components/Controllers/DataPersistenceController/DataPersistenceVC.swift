@@ -1,36 +1,40 @@
 //
-//  StaticTVController.swift
+//  DataPersistenceVC.swift
 //  iOS Components
 //
-//  Created by Deepak Dewani on 03/12/17.
+//  Created by Deepak Dewani on 08/12/17.
 //  Copyright © 2017 Deepak Kumar Dewani. All rights reserved.
 //
 
 import UIKit
 
-class StaticTVController: UITableViewController {
+class DataPersistenceVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 1
     }
-    
-    func setupUI() {
-        self.title = "StaticTV"
-        // to remove extra table separator
-        self.tableView.tableFooterView = UIView()
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
 
 }

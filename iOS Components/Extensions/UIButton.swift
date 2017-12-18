@@ -10,6 +10,7 @@ import UIKit
 import  Device
 extension UIButton {
     
+    // method to set font for the given button
     func font(size: Int, type: FontType, family: FontFamily) {
         
         if type.rawValue == "" {

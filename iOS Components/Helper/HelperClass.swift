@@ -9,9 +9,9 @@
 import Foundation
 
 
-class Helper {
-
-    let viewControllers = ["BasicController", "TableViewController", "CollectionViewController", "TabBarViewController", "PickerViewController", "TextViewController", "ScrollViewController", "PageViewController", "WebkitViewController"]
+class HelperClass {
     
-
+    let viewControllers = ["UITableViewController", "UICollectionViewController", "UITabBarViewController", "UIPickerViewController", "UITextViewController", "UIScrollViewController", "UIPageViewController", "UIWebkitViewController", "Data Persistence", "Miscellaneous"]
+    
+    let miscellaneousControllers = ["ViewController-LifeCycle", "UIButton, UISegmentedControl, UIStepper, UISlider", "UIView, UISwitch", "UIImageView", "UIVisualEffectView", "UIActivityIndicatorView, UIProgressView"]
 }

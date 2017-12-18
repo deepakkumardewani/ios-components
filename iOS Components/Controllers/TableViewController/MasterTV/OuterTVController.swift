@@ -17,8 +17,16 @@ class OuterTVController: UITableViewController {
         setupUI()
     }
 
+    func setupUI() {
+        self.title = "OuterTV"
+        
+        // for setting height of rows automatically based on content of the cell
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    /*========================================================================================*/
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 2
@@ -28,21 +36,19 @@ class OuterTVController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
-
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! OuterTVCell
         
-        cell.textLabel?.font(size: 20, type: .Default, family: .Default)
+        cell.textLabel?.font(size: 20, type: .Bold, family: .Default)
         
         if indexPath.section == 0 {
-            cell.outerLabel?.text = "Static Table View with Custom Cell Style"
+            cell.outerLabel?.text = "1. Static Table View with Custom Cell Style"
 //            cell.backgroundColor = .yellow
             cell.outerLabel?.textColor = .black
             
         }
         else if indexPath.section == 1 {
-            cell.outerLabel?.text = "Dynamic Table View with Custom Cell Style"
+            cell.outerLabel?.text = "2. Dynamic Table View with Custom Cell Style"
 //            cell.backgroundColor = .orange
             cell.outerLabel?.textColor = .black
         }
@@ -52,19 +58,13 @@ class OuterTVController: UITableViewController {
             cell.outerLabel?.textColor = .black
         }
 
-        // Configure the cell...
-
         return cell
     }
- 
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
+    /*========================================================================================*/
     
-    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
-    }
-
+    
+    /*========================================================================================*/
+    // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -77,23 +77,21 @@ class OuterTVController: UITableViewController {
             self.navigationController?.pushViewController(dynamicTV!, animated: true)
         }
     }
+    /*========================================================================================*/
     
-    func setupUI() {
-        self.title = "OuterTV"
-        tableView.estimatedRowHeight = 44
-        tableView.rowHeight = UITableViewAutomaticDimension
+    
+    /*========================================================================================*/
+    //MARK: UITableViewAutomaticDimension
+    // methods for setting height of rows automatically based on content of the cell
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    /*========================================================================================*/
     
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//        let indexPath = tableView.indexPathForSelectedRow?.row
-//        let detailTV = segue.destination as! StaticDetailTVController
-//
-//    }
  
 
 }

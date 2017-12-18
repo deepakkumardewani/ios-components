@@ -61,6 +61,8 @@ class DynamicTVController: UITableViewController {
         self.title = "DynamivTV"
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
+        // to remove extra table separator
+        self.tableView.tableFooterView = UIView()
     }
 
     /*

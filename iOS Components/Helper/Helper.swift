@@ -8,7 +8,7 @@
 
 import Device
 
-
+// enum for the FontType
 enum FontType: String {
     case Bold = "Bold"
     case Italic = "Italic"
@@ -16,6 +16,7 @@ enum FontType: String {
     case Default = ""
 }
 
+// enum for the FontFamily
 enum FontFamily: String {
     case Helvetica = "Helvetica"
     case Georgia = "Georgia"
@@ -24,6 +25,7 @@ enum FontFamily: String {
     case Default = "HelveticaNeue"
 }
 
+// add a TimeInterval before executing a block of code
 public func delay(for delay: TimeInterval, block: @escaping () -> Void) {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: block)
 }

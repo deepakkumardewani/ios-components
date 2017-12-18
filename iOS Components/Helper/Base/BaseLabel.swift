@@ -13,5 +13,7 @@ class BaseLabel: UILabel {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.font(size: 20, type: .Default, family: .Default)
+        
     }
 }

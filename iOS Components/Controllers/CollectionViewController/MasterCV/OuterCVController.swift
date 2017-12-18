@@ -78,6 +78,7 @@ class OuterCVController: UICollectionViewController, UICollectionViewDelegateFlo
             self.navigationController?.pushViewController(dynamicTV!, animated: true)
         }
     }
+    
 
 
 }

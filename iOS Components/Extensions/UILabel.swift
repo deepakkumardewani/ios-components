@@ -9,7 +9,8 @@
 import UIKit
 import  Device
 
-extension UILabel {    
+extension UILabel {
+    // method to set font for the given label
     func font(size: CGFloat, type: FontType, family: FontFamily) {
         if type.rawValue == "" {
             switch Device.size() {

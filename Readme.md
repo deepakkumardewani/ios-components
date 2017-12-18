@@ -4,6 +4,17 @@ This project aims to give you a reference and eliminate the hours you spend on s
 
 See the demo app to play with all the components.
 
+<p align="center">
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift3-f48041.svg?style=flat"></a>
+
+<a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2011%2B-blue.svg?style=flat"></a>
+
+<a href="https://github.com/jiecao-fm/SwiftTheme/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat"></a>
+
+<a href="https://github.com/jiecao-fm/SwiftTheme/tree/0.4.0"><img src="https://img.shields.io/badge/release-1.0.0-blue.svg"></a>
+
+</p>
+
 ## Project Details
 
 ### Requirements

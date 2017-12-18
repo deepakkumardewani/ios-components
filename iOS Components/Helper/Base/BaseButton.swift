@@ -13,5 +13,6 @@ class BaseButton: UIButton {
         super.awakeFromNib()
         // Initialization code
         
+        self.font(size: 20, type: .Default, family: .Default)
     }
 }
